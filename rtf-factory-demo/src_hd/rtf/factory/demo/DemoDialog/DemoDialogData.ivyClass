@@ -1,0 +1,6 @@
+DemoDialogData #class
+rtf.factory.demo.DemoDialog #namespace
+customer rtf.factory.demo.Customer #field
+customer PERSISTENT #fieldModifier
+file File #field
+file PERSISTENT #fieldModifier

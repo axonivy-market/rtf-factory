@@ -1,0 +1,6 @@
+Data #class
+rtf.factory.test #namespace
+name String #field
+name PERSISTENT #fieldModifier
+firstname String #field
+firstname PERSISTENT #fieldModifier

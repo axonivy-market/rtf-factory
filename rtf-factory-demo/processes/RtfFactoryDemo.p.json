@@ -1,0 +1,63 @@
+{
+  "format" : "10.0.0",
+  "id" : "1916FA60254D9CC2",
+  "config" : {
+    "data" : "rtf.factory.demo.Data"
+  },
+  "elements" : [ {
+      "id" : "f0",
+      "type" : "RequestStart",
+      "name" : "start.ivp",
+      "config" : {
+        "callSignature" : "start",
+        "input" : {
+          "map" : {
+            "out.customer.address" : "\"Baarerstrasse 12\"",
+            "out.customer.city" : "\"Zug\"",
+            "out.customer.firstname" : "\"Yvonne\"",
+            "out.customer.name" : "\"Flury\"",
+            "out.customer.postcode" : "\"6300\""
+          }
+        },
+        "outLink" : "start.ivp",
+        "tags" : "demo",
+        "case" : { }
+      },
+      "visual" : {
+        "at" : { "x" : 96, "y" : 64 }
+      },
+      "connect" : { "id" : "f4", "to" : "f3" }
+    }, {
+      "id" : "f1",
+      "type" : "TaskEnd",
+      "visual" : {
+        "at" : { "x" : 424, "y" : 64 }
+      }
+    }, {
+      "id" : "f3",
+      "type" : "DialogCall",
+      "name" : "DemoDialog",
+      "config" : {
+        "dialogId" : "rtf.factory.demo.DemoDialog",
+        "startMethod" : "start(rtf.factory.demo.Customer)",
+        "output" : {
+          "map" : {
+            "out" : "in",
+            "out.customer" : "result.customer"
+          }
+        },
+        "call" : {
+          "params" : [
+            { "name" : "customer", "type" : "rtf.factory.demo.Customer" }
+          ],
+          "map" : {
+            "param.customer" : "in.customer"
+          }
+        }
+      },
+      "visual" : {
+        "at" : { "x" : 248, "y" : 64 }
+      },
+      "connect" : { "id" : "f2", "to" : "f1" }
+    } ]
+}

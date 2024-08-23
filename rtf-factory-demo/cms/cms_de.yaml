@@ -1,0 +1,5 @@
+title: 'Welcome <%=in.customer.firstname%> '
+txt: |-
+  Included content from CMS with embedded inner macros: customer.name = <%=in.customer.name%>!
+  \par
+  Created by: <%=ivy.session.getSessionUserName()%>

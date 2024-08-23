@@ -1,0 +1,6 @@
+Data #class
+rtf.factory.demo #namespace
+file File #field
+file PERSISTENT #fieldModifier
+customer rtf.factory.demo.Customer #field
+customer PERSISTENT #fieldModifier

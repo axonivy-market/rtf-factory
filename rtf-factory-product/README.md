@@ -8,11 +8,12 @@ When you create your very valuable documentation, please be aware that this Read
 
 The RTF Factory is a very easy document generator that expands document templates in rft format with process data and ivy macro functions.
 Rtf document templates can be created using MS Word for example. Simply use ivy macros as placeholders in the document.
-To insert a process data attribute the macro should look like this 
+
+To insert a process data attribute the macro will look like this 
 ```
 <%=in.customer.name%>
 ```
-Content objects from the CMS can be expanded with a function like this 
+Content objects from the CMS can be expanded with a macro that calls the cms.co function  
 ```
 <%=ivy.cms.co("/labels/greeting")%>     
 ```

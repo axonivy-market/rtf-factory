@@ -25,13 +25,15 @@ The document templates can be managed in the CMS or somewhere else in the files 
 
 ![Demo-Dialog](images/DemoDialog.png)
 
-A complete script fragment to load a template and call the expander may look like this
+The complete script fragment to load a template and call the expander may look like this
 
 ```
 import ch.ivyteam.ivy.RtfFactory.ExportFromCms;
 import ch.ivyteam.ivy.RtfFactory.RtfExpander;
 RtfExpander.sendExpandedRtfFile(ExportFromCms.export("my-document-template", "rtf"), in);
 ```
+
+The resulting expanded sample document
 
 ![Generated-Document](images/GeneratedDocument.png)
 

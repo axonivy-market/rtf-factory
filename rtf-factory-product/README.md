@@ -6,7 +6,7 @@ When you create your very valuable documentation, please be aware that this Read
 
 # RTF Factory
 
-The RTF Factory is a very easy document generator that expands document templates in rft format with process data and ivy macro functions.
+The RTF Factory is an easy document generator that expands document templates in rft format with process data and ivy macro functions.
 Rtf document templates can be created using MS Word for example. Simply use ivy macros as placeholders in the document.
 
 To insert a process data attribute the macro will look like this 
@@ -21,12 +21,12 @@ Content objects from the CMS can be expanded with a macro that calls the cms.co 
 
 ## Demo
 
-The RTF Factory provides a single method to generate an download a document. You will usually call this method in a user task.
-The document templates can be managed in the CMS or somewhere else in the files system. 
+The RTF Factory provides a single method to generate and download a document. You will usually call this method in a user task.
+The document templates can be managed in the CMS or somewhere in the files system. 
 
 ![Demo-Dialog](images/DemoDialog.png)
 
-The complete script fragment to load a template and call the expander may look like this
+The complete script fragment that loads a template and calls the expander
 
 ```
 import ch.ivyteam.ivy.RtfFactory.ExportFromCms;
@@ -34,7 +34,7 @@ import ch.ivyteam.ivy.RtfFactory.RtfExpander;
 RtfExpander.sendExpandedRtfFile(ExportFromCms.export("my-document-template", "rtf"), in);
 ```
 
-The resulting expanded sample document
+The resulting sample document
 
 ![Generated-Document](images/GeneratedDocument.png)
 

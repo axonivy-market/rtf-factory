@@ -6,6 +6,10 @@
   <artifactId>rtf-factory-test</artifactId>
   <version>10.0.0-SNAPSHOT</version>
   <packaging>iar</packaging>
+  <properties>
+    <project.build.plugin.version>10.0.16</project.build.plugin.version>
+    <unit-tester.version>10.0.16</unit-tester.version>    
+  </properties>  
   <dependencies>
     <dependency>
       <groupId>com.axonivy.utils.rtffactory</groupId>
@@ -16,7 +20,7 @@
     <dependency>
       <groupId>com.axonivy.ivy.test</groupId>
       <artifactId>unit-tester</artifactId>
-      <version>10.0.16</version>
+        <version>${unit-tester.version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -26,7 +30,7 @@
       <plugin>
         <groupId>com.axonivy.ivy.ci</groupId>
         <artifactId>project-build-plugin</artifactId>
-        <version>10.0.14</version>
+        <version>${project.build.plugin.version}</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>

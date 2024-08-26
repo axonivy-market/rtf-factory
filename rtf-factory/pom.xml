@@ -23,6 +23,9 @@
       <plugin>
         <groupId>com.axonivy.ivy.ci</groupId>
         <artifactId>project-build-plugin</artifactId>
+        <configuration>
+          <ivyVersion>10.0.21</ivyVersion>
+        </configuration>
         <version>${project.build.plugin.version}</version>
         <extensions>true</extensions>
       </plugin>

@@ -69,9 +69,7 @@
           "code" : [
             "import ch.ivyteam.ivy.RtfFactory.ExportFromCms;",
             "import ch.ivyteam.ivy.RtfFactory.RtfExpander;",
-            "RtfExpander.sendExpandedRtfFile(ExportFromCms.export(\"document-template\", \"rtf\"), in);",
-            "",
-            "ivy.log.debug(\"by \"+ivy.session.getSessionUserName());"
+            "RtfExpander.sendExpandedRtfFile(ExportFromCms.export(\"document-template\", \"rtf\"), in);"
           ]
         }
       },

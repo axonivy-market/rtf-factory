@@ -18,7 +18,6 @@ import ch.ivyteam.ivy.scripting.types.IIvyClass;
 import ch.ivyteam.ivy.scripting.util.IvyScriptProcessVariables;
 
 
-@SuppressWarnings("restriction")
 public class RtfExpander {
 
   // send rtf file as response to the web browser

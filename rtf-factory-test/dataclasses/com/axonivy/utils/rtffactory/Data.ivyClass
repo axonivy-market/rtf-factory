@@ -1,5 +1,5 @@
 Data #class
-rtf.factory.test #namespace
+com.axonivy.utils.rtffactory #namespace
 name String #field
 name PERSISTENT #fieldModifier
 firstname String #field

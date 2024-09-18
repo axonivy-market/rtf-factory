@@ -2,7 +2,7 @@
   "format" : "10.0.0",
   "id" : "1916FA60254D9CC2",
   "config" : {
-    "data" : "rtf.factory.demo.Data"
+    "data" : "com.axonivy.utils.rtffactory.Data"
   },
   "elements" : [ {
       "id" : "f0",
@@ -38,8 +38,8 @@
       "type" : "DialogCall",
       "name" : "DemoDialog",
       "config" : {
-        "dialogId" : "rtf.factory.demo.DemoDialog",
-        "startMethod" : "start(rtf.factory.demo.Customer)",
+        "dialogId" : "com.axonivy.utils.rtffactory.DemoDialog",
+        "startMethod" : "start(com.axonivy.utils.rtffactory.Customer)",
         "output" : {
           "map" : {
             "out" : "in",
@@ -48,7 +48,7 @@
         },
         "call" : {
           "params" : [
-            { "name" : "customer", "type" : "rtf.factory.demo.Customer" }
+            { "name" : "customer", "type" : "com.axonivy.utils.rtffactory.Customer" }
           ],
           "map" : {
             "param.customer" : "in.customer"

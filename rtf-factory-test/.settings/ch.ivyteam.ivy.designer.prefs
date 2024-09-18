@@ -1,4 +1,4 @@
-ch.ivyteam.ivy.designer.preferences.DataClassPreferencePage\:DEFAULT_DATA_CLASS=rtf.factory.test.Data
+ch.ivyteam.ivy.designer.preferences.DataClassPreferencePage\:DEFAULT_DATA_CLASS=com.axonivy.utils.rtffactory.Data
 ch.ivyteam.ivy.designer.preferences.DataClassPreferencePage\:DEFAULT_NAMESPACE=rtf.factory.test
 ch.ivyteam.ivy.project.preferences\:PRIMEFACES_VERSION=11
 ch.ivyteam.ivy.project.preferences\:PROJECT_VERSION=100000

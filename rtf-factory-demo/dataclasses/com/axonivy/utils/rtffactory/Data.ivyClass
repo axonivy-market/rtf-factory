@@ -1,6 +1,6 @@
 Data #class
-rtf.factory.demo #namespace
+com.axonivy.utils.rtffactory #namespace
 file File #field
 file PERSISTENT #fieldModifier
-customer rtf.factory.demo.Customer #field
+customer com.axonivy.utils.rtffactory.Customer #field
 customer PERSISTENT #fieldModifier

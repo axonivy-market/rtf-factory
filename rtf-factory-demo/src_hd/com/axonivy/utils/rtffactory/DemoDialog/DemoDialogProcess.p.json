@@ -3,7 +3,7 @@
   "id" : "1916FBA27EFBDBA6",
   "kind" : "HTML_DIALOG",
   "config" : {
-    "data" : "rtf.factory.demo.DemoDialog.DemoDialogData"
+    "data" : "com.axonivy.utils.rtffactory.DemoDialog.DemoDialogData"
   },
   "elements" : [ {
       "id" : "f0",
@@ -13,7 +13,7 @@
         "callSignature" : "start",
         "result" : {
           "params" : [
-            { "name" : "customer", "type" : "rtf.factory.demo.Customer" }
+            { "name" : "customer", "type" : "com.axonivy.utils.rtffactory.Customer" }
           ],
           "map" : {
             "result.customer" : "in.customer"
@@ -21,7 +21,7 @@
         },
         "input" : {
           "params" : [
-            { "name" : "customer", "type" : "rtf.factory.demo.Customer" }
+            { "name" : "customer", "type" : "com.axonivy.utils.rtffactory.Customer" }
           ],
           "map" : {
             "out.customer" : "param.customer"
@@ -67,8 +67,9 @@
         "security" : "system",
         "output" : {
           "code" : [
-            "import ch.ivyteam.ivy.RtfFactory.ExportFromCms;",
-            "import ch.ivyteam.ivy.RtfFactory.RtfExpander;",
+            "import com.axonivy.utils.rtffactory.RtfExpander;",
+            "import com.axonivy.utils.rtffactory.ExportFromCms;",
+            "",
             "RtfExpander.sendExpandedRtfFile(ExportFromCms.export(\"document-template\", \"rtf\"), in);"
           ]
         }

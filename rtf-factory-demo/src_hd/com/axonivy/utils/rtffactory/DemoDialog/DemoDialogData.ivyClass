@@ -1,6 +1,6 @@
 DemoDialogData #class
-rtf.factory.demo.DemoDialog #namespace
-customer rtf.factory.demo.Customer #field
+com.axonivy.utils.rtffactory.DemoDialog #namespace
+customer com.axonivy.utils.rtffactory.Customer #field
 customer PERSISTENT #fieldModifier
 file File #field
 file PERSISTENT #fieldModifier

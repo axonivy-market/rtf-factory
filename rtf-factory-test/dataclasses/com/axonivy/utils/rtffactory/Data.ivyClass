@@ -1,0 +1,6 @@
+Data #class
+com.axonivy.utils.rtffactory #namespace
+name String #field
+name PERSISTENT #fieldModifier
+firstname String #field
+firstname PERSISTENT #fieldModifier

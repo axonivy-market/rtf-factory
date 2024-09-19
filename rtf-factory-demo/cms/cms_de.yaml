@@ -1,0 +1,7 @@
+title: 'Welcome <%=in.customer.firstname%> '
+txt: |-
+  This is text content from CMS. Embedded macros are supported to insert data and to call API methods.
+  \par
+  Customer name = <%=in.customer.name%>.
+  \par
+  Created by: <%=ivy.session.getSessionUserName()%>

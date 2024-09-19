@@ -1,7 +1,7 @@
-# MY-PRODUCT-NAME
+# RTF Factory
 
-[![CI Build](https://github.com/axonivy-market/REPO-NAME/actions/workflows/ci.yml/badge.svg)](https://github.com/axonivy-market/REPO-NAME/actions/workflows/ci.yml)
+[![CI Build](https://github.com/axonivy-market/rtf-factory/actions/workflows/ci.yml/badge.svg)](https://github.com/axonivy-market/rtf-factory/actions/workflows/ci.yml)
 
-"YOUR SHORT DESCRIPTION GOES HERE"
+Easy document generator based on rtf templates
 
-Read our [documentation](MY-PRODUCT-NAME-product/README.md).
+Read our [documentation](rtf-factory-product/README.md).

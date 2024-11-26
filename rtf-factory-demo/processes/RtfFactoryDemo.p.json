@@ -1,5 +1,5 @@
 {
-  "format" : "10.0.0",
+  "$schema" : "https://json-schema.axonivy.com/process/12.0.0/process.json",
   "id" : "1916FA60254D9CC2",
   "config" : {
     "data" : "com.axonivy.utils.rtffactory.Data"
@@ -9,7 +9,7 @@
       "type" : "RequestStart",
       "name" : "start.ivp",
       "config" : {
-        "callSignature" : "start",
+        "signature" : "start",
         "input" : {
           "map" : {
             "out.customer.address" : "\"Baarerstrasse 12\"",
@@ -18,15 +18,17 @@
             "out.customer.name" : "\"Flury\"",
             "out.customer.postcode" : "\"6300\""
           }
-        },
-        "outLink" : "start.ivp",
-        "tags" : "demo",
-        "case" : { }
+        }
       },
+      "tags" : [
+        "demo"
+      ],
       "visual" : {
         "at" : { "x" : 96, "y" : 64 }
       },
-      "connect" : { "id" : "f4", "to" : "f3" }
+      "connect" : [
+        { "id" : "f4", "to" : "f3" }
+      ]
     }, {
       "id" : "f1",
       "type" : "TaskEnd",
@@ -38,26 +40,24 @@
       "type" : "DialogCall",
       "name" : "DemoDialog",
       "config" : {
-        "dialogId" : "com.axonivy.utils.rtffactory.DemoDialog",
-        "startMethod" : "start(com.axonivy.utils.rtffactory.Customer)",
+        "dialog" : "com.axonivy.utils.rtffactory.DemoDialog:start(com.axonivy.utils.rtffactory.Customer)",
+        "call" : {
+          "map" : {
+            "param.customer" : "in.customer"
+          }
+        },
         "output" : {
           "map" : {
             "out" : "in",
             "out.customer" : "result.customer"
-          }
-        },
-        "call" : {
-          "params" : [
-            { "name" : "customer", "type" : "com.axonivy.utils.rtffactory.Customer" }
-          ],
-          "map" : {
-            "param.customer" : "in.customer"
           }
         }
       },
       "visual" : {
         "at" : { "x" : 248, "y" : 64 }
       },
-      "connect" : { "id" : "f2", "to" : "f1" }
+      "connect" : [
+        { "id" : "f2", "to" : "f1" }
+      ]
     } ]
 }

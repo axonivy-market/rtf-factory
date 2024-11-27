@@ -55,7 +55,7 @@ public class RtfExpander {
 		}
 		IEmbeddedScriptExpander macroExpander = EmbeddedScriptExpanderFactory.createExpander();
 		IIvyScriptContext context = request.getContext(null);
-		IIvyScriptEngine engine = request.getProject().getIvyScriptEngine();
+		IIvyScriptEngine engine = request.getScriptEngine();
 		IIvyClass<?> data = engine.getClassRepository().getIvyClassOf(in);
 		context.declareVariable("in", data);
 		context.setObject(IvyScriptProcessVariables.IN.getVariableName(), in);

@@ -12,9 +12,6 @@
   <artifactId>rtf-factory</artifactId>
   <version>13.1.1-SNAPSHOT</version>
   <packaging>iar</packaging>
-  <properties>
-    <project.build.plugin.version>12.0.0</project.build.plugin.version>
-  </properties>
   <dependencies>
     <dependency>
       <groupId>com.axonivy.ivy.api</groupId>
@@ -52,9 +49,6 @@
         <groupId>com.axonivy.ivy.ci</groupId>
         <artifactId>project-build-plugin</artifactId>
         <extensions>true</extensions>
-        <configuration>
-          <ivyVersion>12.0.0</ivyVersion>
-        </configuration>
       </plugin>
     </plugins>
   </build>

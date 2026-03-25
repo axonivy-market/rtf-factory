@@ -18,7 +18,7 @@ Ein Prozessdatenattribut kann wie folgt eingefügt werden:
 Inhaltsobjekte aus dem CMS können mit einem Makro erweitert werden, das die
 Funktion cms.co aufruft.
 ```
-<%=ivy.cms.co("/labels/greeting")%>     
+<%=ivy.cms.co("/labels/greeting")%>
 ```
 
 

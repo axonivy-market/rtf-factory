@@ -1,15 +1,12 @@
 {
-  "$schema" : "https://json-schema.axonivy.com/data-class/12.0.0/data-class.json",
+  "$schema" : "https://json-schema.axonivy.com/14.0-dev/project/data-class.json",
   "simpleName" : "DemoDialogData",
   "namespace" : "com.axonivy.utils.rtffactory.DemoDialog",
-  "isBusinessCaseData" : false,
   "fields" : [ {
     "name" : "customer",
-    "type" : "com.axonivy.utils.rtffactory.Customer",
-    "modifiers" : [ "PERSISTENT" ]
+    "type" : "com.axonivy.utils.rtffactory.Customer"
   }, {
     "name" : "file",
-    "type" : "File",
-    "modifiers" : [ "PERSISTENT" ]
+    "type" : "File"
   } ]
 }

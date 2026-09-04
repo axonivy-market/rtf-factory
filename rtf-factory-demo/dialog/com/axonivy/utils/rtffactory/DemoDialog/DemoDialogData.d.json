@@ -4,9 +4,11 @@
   "namespace" : "com.axonivy.utils.rtffactory.DemoDialog",
   "fields" : [ {
     "name" : "customer",
-    "type" : "com.axonivy.utils.rtffactory.Customer"
+    "type" : "com.axonivy.utils.rtffactory.Customer",
+    "modifiers" : [ ]
   }, {
     "name" : "file",
-    "type" : "File"
+    "type" : "File",
+    "modifiers" : [ ]
   } ]
 }

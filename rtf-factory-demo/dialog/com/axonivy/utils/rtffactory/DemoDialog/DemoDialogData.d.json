@@ -1,0 +1,14 @@
+{
+  "$schema" : "https://json-schema.axonivy.com/14.0/project/data-class.json",
+  "simpleName" : "DemoDialogData",
+  "namespace" : "com.axonivy.utils.rtffactory.DemoDialog",
+  "fields" : [ {
+    "name" : "customer",
+    "type" : "com.axonivy.utils.rtffactory.Customer",
+    "modifiers" : [ ]
+  }, {
+    "name" : "file",
+    "type" : "File",
+    "modifiers" : [ ]
+  } ]
+}
